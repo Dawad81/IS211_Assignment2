@@ -33,11 +33,6 @@ def downloadData(url=str):
     return downloadcsvfile
 
 
-#logging.basicConfig(filename='error.log', level=logging.ERROR)
-#logger = logging.getLogger('assignment2')
-
-
-
 def processData(downloadcsvfile):
     """This function takes a variable that has an assigned file object to it,
        then converts it into a dict.
@@ -174,7 +169,6 @@ def main():
         Please enter an ID# to lookup. -34
         Invalid ID entered (Number must be greater than Zero [0]).
                     Exiting the program......Good Bye.
-
     """
     parser = argparse.ArgumentParser()
     parser.add_argument("--url", help="Enter a URL to begin.", required=True)
